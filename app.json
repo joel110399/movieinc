@@ -1,4 +1,39 @@
 {
-  "name": "MoviesInc",
-  "displayName": "MoviesInc"
+  "expo": {
+    "name": "movie-app-1",
+    "slug": "movie-app-1",
+    "description": "Movie App using TMDB API",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/mi-logo.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/mi-logo.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.moviesinc"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/mi-logo.png",
+        "backgroundColor": "#000"
+      },
+      "package": "com.moviesinc"
+    },
+    "web": {
+      "favicon": "./assets/mi-logo.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "04ddddce-5a80-4c00-9e4e-7497ef764236"
+      }
+    },
+    "owner": "jego01"
+  }
 }
