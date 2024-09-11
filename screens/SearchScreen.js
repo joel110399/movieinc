@@ -58,13 +58,12 @@ const SearchScreen = ({ media }) => {
           {/* go back button */}
           <TouchableOpacity
             style={styles.background}
-            className="rounded-xl my-3 mx-4 p-1"
+            className="rounded-xl my-3 ml-2 p-1"
             onPress={() => navigation.goBack()}
           >
-            <ChevronLeftIcon size="28" strokeWidth={2.5} color="white" />
+            <ChevronLeftIcon size="28" strokeWidth={2.5} color="black" />
           </TouchableOpacity>
           <View className="w-80 mx-5 flex-row justify-between">
-            {/* search bar */}
             <TextInput
               className="pl-4 flex-1 my-3 mr-4"
               style={{
@@ -76,7 +75,7 @@ const SearchScreen = ({ media }) => {
                 padding: 10,
                 color: "white",
               }}
-              placeholder="Search Movie..."
+              placeholder="Buscar..."
               placeholderTextColor={"grey"}
               onChangeText={handleDebounce}
             />
@@ -93,7 +92,7 @@ const SearchScreen = ({ media }) => {
           className="space-y-3 mt-28 pl-4 pr-4"
         >
           <Text className="text-white font-semibold ml-1">
-            Results ({results.length})
+            Resultados ({results.length})
           </Text>
           <View className="flex-row justify-between flex-wrap">
             {results.map((item, index) => {

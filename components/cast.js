@@ -5,7 +5,7 @@ import { image342, noPicActor } from "../api/moviedb";
 export default function Cast({ cast, navigation }) {
   return (
     <View className="my-6">
-      <Text className="text-white mx-4 mb-5 text-2xl underline">Top Cast</Text>
+      <Text className="text-white mx-4 mb-5 text-2xl">Actores</Text>
       <ScrollView
         horizontal
         showsHorizontalScrollIndicator={false}
