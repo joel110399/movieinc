@@ -43,8 +43,6 @@ function TrendingMovies({ data, title, media }) {
 }
 
 const MovieCard = ({ item, handleClick, media }) => {
-  console.log("ITEM: ", item);
-
   return (
     <>
       <TouchableWithoutFeedback onPress={() => handleClick(item, media)}>

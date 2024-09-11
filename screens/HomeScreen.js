@@ -34,7 +34,6 @@ function HomeScreen() {
     try {
       const data = await fetchUpcomingMovies();
       data && data.results ? setUpcoming(data.results) : "";
-      console.log("MOVIE DEETS: ", data);
     } catch (e) {
       console.log("Error in getting Upcoming Movies", e);
     }
@@ -64,7 +63,6 @@ function HomeScreen() {
 
   return (
     <SafeAreaView className="flex-1 bg-slate-800">
-      {/* search bar & logo */}
       <NavbarLogo />
 
       {loading ? (
